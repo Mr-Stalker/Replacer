@@ -29,16 +29,31 @@ namespace Replacer
 
         public void ReadAndReplace(string word, string filePath, string fileName, ReplaceWhere where, bool overrideFile)
         {
-            var fileText = "";
+            try
+            {
+                var fileText = "";
 
-            using (var reader = new StreamReader(filePath + fileName))
-                fileText = reader.ReadToEnd().Replace(word,
-                    (where == ReplaceWhere.After ? word : "") +
-                    ";" +
-                    (where == ReplaceWhere.Before ? word : ""));
+                using (var reader = new StreamReader(filePath + fileName))
+                    fileText = reader.ReadToEnd().Replace(word,
+                        (where == ReplaceWhere.After ? word : "") +
+                        ";" +
+                        (where == ReplaceWhere.Before ? word : ""));
 
-            using (var writer = new StreamWriter(filePath + (overrideFile ? "out" : "") + fileName))
-                writer.Write(fileText);
+                using (var writer = new StreamWriter(filePath + (overrideFile ? "" : "out") + fileName))
+                    writer.Write(fileText);
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("O arquivo não foi encontrado", "Erro");
+                return;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Houve um erro, tente novamente", "Erro");
+                return;
+            }
+
+            MessageBox.Show("Processo completado", "Sucesso");
         }
 
         private void button1_Click(object sender, EventArgs e)
