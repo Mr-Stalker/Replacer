@@ -48,7 +48,8 @@ namespace Replacer
                     textBox1.Text,
                     openFileDialog1.FileName.Substring(0, openFileDialog1.FileName.LastIndexOf('\\') + 1),
                     openFileDialog1.SafeFileName,
-                    (ReplaceWhere)comboBox1.SelectedIndex, checkBox1.Checked
+                    comboBox1.SelectedIndex == -1 ? (ReplaceWhere)2 : (ReplaceWhere)comboBox1.SelectedIndex,
+                    checkBox1.Checked
                 );
         }
 
