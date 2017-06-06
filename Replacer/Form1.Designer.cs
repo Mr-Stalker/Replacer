@@ -37,6 +37,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // label1
@@ -64,15 +65,12 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Before keyword",
-            "Replace keyword",
-            "After keyword"});
             this.comboBox1.Location = new System.Drawing.Point(120, 132);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(151, 23);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "Choose position...";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -112,6 +110,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Replace !";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -122,6 +121,10 @@
             this.label4.Size = new System.Drawing.Size(112, 15);
             this.label4.TabIndex = 7;
             this.label4.Text = "© Nishino\'s House";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -157,6 +160,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
