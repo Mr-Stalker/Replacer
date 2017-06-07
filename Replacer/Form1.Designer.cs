@@ -50,7 +50,6 @@
             this.label1.Size = new System.Drawing.Size(204, 57);
             this.label1.TabIndex = 1;
             this.label1.Text = "Replacer";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -71,7 +70,6 @@
             this.comboBox1.Size = new System.Drawing.Size(151, 23);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "Choose position...";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -97,9 +95,9 @@
             this.checkBox1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(89, 174);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(116, 19);
+            this.checkBox1.Size = new System.Drawing.Size(99, 19);
             this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Create a new file";
+            this.checkBox1.Text = "Override File";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -111,7 +109,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Replace !";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label4
             // 
@@ -136,7 +134,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "\"Historical Quotes\" Pattern";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button1_Click);
+            this.button2.Click += new System.EventHandler(this.Button1_Click);
             // 
             // Form1
             // 
@@ -158,7 +156,6 @@
             this.MinimumSize = new System.Drawing.Size(320, 350);
             this.Name = "Form1";
             this.Text = "Replacer v0.1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
