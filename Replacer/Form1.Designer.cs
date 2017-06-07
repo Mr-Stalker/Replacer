@@ -38,7 +38,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -125,16 +125,15 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // button2
+            // Button3
             // 
-            this.button2.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(71, 251);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "\"Historical Quotes\" Pattern";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button1_Click);
+            this.Button3.Location = new System.Drawing.Point(62, 245);
+            this.Button3.Name = "Button3";
+            this.Button3.Size = new System.Drawing.Size(165, 23);
+            this.Button3.TabIndex = 8;
+            this.Button3.Text = "\"Historical Quotes\" Pattern";
+            this.Button3.UseVisualStyleBackColor = true;
+            this.Button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // Form1
             // 
@@ -142,8 +141,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(304, 311);
+            this.Controls.Add(this.Button3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.textBox1);
@@ -171,7 +170,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Button3;
     }
 }
 
