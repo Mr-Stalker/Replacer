@@ -3,7 +3,9 @@
 You can use Replacer to put some 
 
 You can use replacer to replace keywords in text files with other keywords (for now it only replaces with;);
-We added the default for historical quotations to make it easier to pass such files to an excel spreadsheet
+We added the default for historical quotations to make it easier to pass such files to an excel spreadsheet !
+
+All made in C# !
 
 ## Downloads
 
