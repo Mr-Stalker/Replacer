@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+##Replacer - a software to replace things in texts
 
 You can use the [editor on GitHub](https://github.com/Mr-Stalker/Replacer/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
