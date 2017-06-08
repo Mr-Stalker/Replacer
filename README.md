@@ -9,6 +9,6 @@ We added the default for historical quotations to make it easier to pass such fi
 
 You can get Replacer here : [Builds]https://github.com/Mr-Stalker/Replacer/tree/master/Builds
 
-### Support or Contact
+## Support or Contact
 
 Having trouble or having questions? Message us on [Facebook](https://www.facebook.com/nishinoshouse/).
